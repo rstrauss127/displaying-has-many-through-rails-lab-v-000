@@ -1,0 +1,6 @@
+<% @patients.each do |pat| %>
+  <div class="patient">
+    <%= link_to pat.name, patient_path(pat) %>
+    <%= pat.appointments.count %>
+  </div>
+<% end %>
